@@ -1,0 +1,13 @@
+@media screen and (min-width:320px){
+    header{
+        display: none;
+    }
+    .header-bottom-left{
+        width: 85%;
+    }
+    .header-bottom-right{
+        width: 85%;
+        margin-top: 80px;
+        justify-content: center;
+    }
+}
