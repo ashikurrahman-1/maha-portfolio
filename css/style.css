@@ -447,3 +447,65 @@ header nav ul li a:active{
 }
 
 /* Portfolio section end */
+
+/* pricing section start */
+#pricing{
+    padding: 100px 0;
+}
+#pricing h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+#pricing .p-tables{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    text-align: center;
+}
+.p-tables .table{
+    background: #1E1E25;
+    padding: 50px 0;
+    transition: .6s;
+}
+.p-tables .table:hover{
+    box-shadow: 0 0 50px 10px black;
+}
+.p-tables .table i{
+    font-size: 40px;
+    color: orange;
+}
+.p-tables .table h2{
+    font-size: 26px;
+    color: lightgray;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+}
+.p-tables .table p{
+    color: lightgray;
+    font-family: 'Roboto', sans-serif;
+}
+.p-tables .table .dollar{
+    font-size: 40px;
+    font-weight: 900;
+    color: orange;
+    margin: 30px 0;
+    display: block;
+}
+.p-tables .table a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    background: rgb(4, 153, 146);
+    color: lightgray;
+    padding: 8px 30px;
+    border-radius: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    display: inline-block;
+    transition: .6s;
+}
+.p-tables .table a:hover{
+    background: orange;
+}
+/* pricing section end */
