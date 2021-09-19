@@ -113,7 +113,7 @@ header nav ul li a:active{
     transition: .4s;
 }
 .socials ul li i:hover{
-    color: blue;
+    color: orange;
 }
 .header-bottom-right{
     display: flex;
@@ -286,3 +286,164 @@ header nav ul li a:active{
     right: -1%;
 }
 /* about section end */
+
+/* Skill section Start */
+.skill-content h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 100px;
+}
+.skill-content .progress{
+    margin-bottom: 25px;
+}
+.skill-content .progress-name{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-content label{
+    font-weight: bold;
+    color: coral;
+}
+.skill-content progress{
+    width: 100%;
+    height: 40px;
+}
+/* Skill section End */
+
+/* experience section start */
+#experience{
+    padding: 50px 0 80px;
+}
+#experience h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+    color: orange;
+}
+.experience-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+.experience-items h2{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+}
+.experience-items .e-box{
+    background: #1E1E25;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+.experience-items h3{
+    font-size: 25px;
+    color: #fff;
+}
+.experience-items h3 a{
+    color: orange;
+    text-decoration: none;
+}
+.experience-items span{
+    color: orange;
+}
+.experience-items p{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: lightgray;
+}
+
+/* experience section end */
+
+/* Portfolio section start */
+/* p-top */
+#portfolio .p-top h1{
+    text-align: center;
+    font-size: 45px;
+}
+#portfolio .p-top .p-p-list{
+    margin: 0 auto;
+    display: table;
+}
+#portfolio .p-top ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 50px;
+}
+#portfolio .p-top ul li{
+    margin-left: 20px;
+}
+#portfolio .p-top ul li a{
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+#portfolio .p-top ul li a:hover{
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+/* p-bottom */
+
+.recent-portfolio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.recent-portfolio img{
+    width: 100%;
+    border-radius: 10px;
+}
+.recent-portfolio .img{
+    position: relative;
+}
+.recent-portfolio .img .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    background: rgb(3 234 128 / 92%);
+    border-radius: 10px;
+    visibility: hidden;
+    transition: 1s;
+}
+.recent-portfolio .portfolios{
+    position: relative;
+    margin-bottom: 20px;
+}
+.recent-portfolio .portfolios .overlay-content{
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    text-align: center;
+    z-index: 1;
+}
+.recent-portfolio .portfolios .overlay-content a{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transform: translateY(-100%);
+    visibility: hidden;
+    transition: 1s;
+}
+.recent-portfolio .portfolios .overlay-content h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    transform: translateX(-62%);
+    visibility: hidden;
+    transition: 1s;
+}
+.recent-portfolio .portfolios .overlay-content p{
+    transform: translateX(70%);
+    visibility: hidden;
+    transition: 1s;
+}
+.recent-portfolio .portfolios:hover h4, .recent-portfolio .portfolios:hover .overlay-content p, .recent-portfolio .portfolios:hover .overlay-content a, .recent-portfolio .portfolios:hover .img .img-overlay{
+    transform: translateX(0);
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Portfolio section end */
