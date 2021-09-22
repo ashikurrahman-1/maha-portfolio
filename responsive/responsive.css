@@ -1,1 +1,37 @@
-/* navbar */
+/* Navbar responsive */
+@media all and (max-width: 992px){
+    nav ul{
+        float: none;
+        position: absolute;
+        top: 90px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(32, 178, 171, 0.932);
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 65px;
+        transition: all .8s ease-in-out;
+    }
+    nav ul li{
+        text-align: center;
+        transition: all .5s ease-in-out;
+    }
+    nav ul li:hover{
+        background: lightsalmon;
+    }
+    nav ul li a:hover{
+        color: lightseagreen;
+    }
+    
+    nav .menu-logo{
+        display: block;
+    }
+    nav #toggler:checked ~ ul{
+        right: 0;
+    }
+    /* toggler */
+    
+
+};
