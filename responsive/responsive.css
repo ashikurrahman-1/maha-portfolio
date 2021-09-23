@@ -119,7 +119,7 @@
         padding-top: 0;
     }
     .about-bottom h1{
-        font-size: 35px;
+        font-size: 34px;
     }
 
     /* Portfolio section */
@@ -137,6 +137,9 @@
     .recent-portfolio .portfolios .overlay-content a{
         transform: translate(145%, 80%);
         font-size: 20px;
+    }
+    .recent-portfolio .portfolios:hover .overlay-content a{
+        transform: translate(-28%, -34%);
     }
     .recent-portfolio .portfolios .overlay-content h4{
         display: none;
