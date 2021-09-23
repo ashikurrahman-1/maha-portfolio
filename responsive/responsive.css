@@ -118,6 +118,9 @@
     .about-bottom{
         padding-top: 0;
     }
+    .about-bottom h1{
+        font-size: 35px;
+    }
 
     /* Portfolio section */
     #portfolio .p-top h1{
@@ -128,8 +131,8 @@
         display: none;
     }
     .recent-portfolio .portfolios .overlay-content{
-        top: 25%;
-        left: 25%;
+        top: 45%;
+        left: 45%;
     }
     .recent-portfolio .portfolios .overlay-content a{
         transform: translate(145%, 80%);
