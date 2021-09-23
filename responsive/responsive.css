@@ -34,7 +34,7 @@
     }
 }; */
 
-@media all and (max-width: 320px){
+@media all and (max-width: 375px){
     /* navbar */
     nav .logo{
         width: 35%;
