@@ -74,8 +74,8 @@ nav .menu-logo{
 .container{
     max-width: 85%;
     margin: 0 auto;
-    overflow-x: hidden !important;
-    overflow-y: hidden !important;
+    /* overflow-x: hidden !important;
+    overflow-y: hidden !important; */
 }
 /* header nav end */
 

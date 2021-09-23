@@ -100,7 +100,7 @@
         padding-top: 50px;
     }
     .about-top{
-        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
     }
     .about-top-right h2{
         margin-bottom: 20px;
@@ -128,8 +128,8 @@
         display: none;
     }
     .recent-portfolio .portfolios .overlay-content{
-        top: 0;
-        left: 0;
+        top: 25%;
+        left: 25%;
     }
     .recent-portfolio .portfolios .overlay-content a{
         transform: translate(145%, 80%);
