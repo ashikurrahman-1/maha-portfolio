@@ -1,8 +1,9 @@
 /* Navbar responsive */
-@media all and (max-width: 992px){
+
+/* @media all and (max-width: 992px){
     nav ul{
         float: none;
-        position: absolute;
+        position: fixed;
         top: 90px;
         right: -100%;
         width: 100%;
@@ -31,7 +32,149 @@
     nav #toggler:checked ~ ul{
         right: 0;
     }
-    /* toggler */
-    
+}; */
 
-};
+@media all and (max-width: 320px){
+    /* navbar */
+    nav .logo{
+        width: 35%;
+    }
+    nav ul{
+        float: none;
+        position: fixed;
+        top: 90px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(32, 178, 171, 0.932);
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 65px;
+        transition: all .8s ease-in-out;
+    }
+    nav ul li{
+        text-align: center;
+        transition: all .5s ease-in-out;
+    }
+    nav ul li:hover{
+        background: lightsalmon;
+    }
+    nav ul li a:hover{
+        color: lightseagreen;
+    }
+    
+    nav .menu-logo{
+        display: block;
+    }
+    nav #toggler:checked ~ ul{
+        right: 0;
+    }
+
+    /* home section */
+    .header-bottom{
+        grid-template-columns: repeat(auto-fit, minmax(55%, 1fr));
+    }
+    .header-bottom-right{
+        margin-top: 100px;
+        justify-content: center;
+    }
+/* Experience section */
+    .experience-items{
+        grid-template-columns: repeat(auto-fit, minmax(55%, 1fr));
+    }
+    .experience-items h2{
+        margin-bottom: 50px;
+        font-size: 35px;
+    }
+    .edu-contents .e-box{
+        padding: 30px 20px;
+    }
+    .e-box span{
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    /* about section */
+    #about{
+        padding-top: 50px;
+    }
+    .about-top-right h2{
+        margin-bottom: 20px;
+    }
+    .about-middle .about-middle-content{
+        grid-template-columns: repeat(auto-fit, minmax(55%, 1fr));
+    }
+    .about-middle .about-middle-content .abc h2{
+        margin: 20px 0;
+    }
+    .owl-carousel .owl-item .slider{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .about-bottom{
+        padding-top: 0;
+    }
+
+    /* Portfolio section */
+    #portfolio .p-top h1{
+        margin-bottom: 50px;
+        font-size: 35px;
+    }
+    #portfolio .p-top .p-p-list{
+        display: none;
+    }
+    .recent-portfolio .portfolios .overlay-content{
+        top: 0;
+        left: 0;
+    }
+    .recent-portfolio .portfolios .overlay-content a{
+        transform: translate(145%, 80%);
+        font-size: 20px;
+    }
+    .recent-portfolio .portfolios .overlay-content h4{
+        display: none;
+    }
+    .recent-portfolio .portfolios .overlay-content p{
+        display: none;
+    }
+
+    /* Pricing section */
+    #pricing h1{
+        margin-bottom: 50px;
+        font-size: 35px;
+    }
+    #pricing .p-tables{
+        grid-template-columns: repeat(auto-fit, minmax(55%, 1fr));
+    }
+    
+    /* blog section */
+    #blog h1{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #blog .blogs{
+        grid-template-columns: repeat(auto-fit, minmax(55%, 1fr));
+    }
+    #blog .blogs .blog-content p{
+        margin: 20px;
+    }
+
+    /* Contact section */
+    #contact h1{
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+    #contact .contact-top{
+        grid-template-columns: repeat(auto-fit, minmax(55%, 1fr));
+    }
+    .contact-bottom{
+        grid-template-columns: repeat(auto-fit, minmax(55%, 1fr));
+    }
+
+    /* footer section */
+    footer p{
+        font-size: 14px;
+    }
+}
+
