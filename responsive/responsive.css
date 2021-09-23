@@ -139,7 +139,7 @@
         font-size: 20px;
     }
     .recent-portfolio .portfolios:hover .overlay-content a{
-        transform: translate(0%, 0%);
+        transform: translate(-50%, -50%);
     }
     .recent-portfolio .portfolios .overlay-content h4{
         display: none;
