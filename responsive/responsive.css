@@ -34,7 +34,7 @@
     }
 }; */
 
-@media all and (max-width: 375px){
+@media all and (max-width: 600px){
     /* navbar */
     nav .logo{
         width: 35%;
@@ -98,6 +98,9 @@
     /* about section */
     #about{
         padding-top: 50px;
+    }
+    .about-top{
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     }
     .about-top-right h2{
         margin-bottom: 20px;
