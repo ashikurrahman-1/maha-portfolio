@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin: 0;
     padding: 0;
@@ -13,14 +14,17 @@ body{
     overflow-x: hidden !important;
 }
 /* Header nav start */
-header{
-    position: sticky;
+#navbar{
+    position: fixed;
     top: 0;
     left: 0;
-}
-nav{
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
     height: 90px;
     background: rgba(27, 27, 27, 0.925);
+}
+nav{
     overflow: hidden;
 }
 nav .logo{
@@ -196,7 +200,7 @@ nav .menu-logo{
 }
 /* about middle */
 .about-middle{
-    margin: 150px 0;
+    margin: 100px 0;
 }
 .about-middle h1{
     text-align: center;
@@ -209,7 +213,6 @@ nav .menu-logo{
 .about-middle .about-middle-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    grid-template-rows: repeat(2, 1fr);
     justify-content: center;
     grid-gap: 50px;
 }
@@ -372,6 +375,7 @@ nav .menu-logo{
 #portfolio .p-top h1{
     text-align: center;
     font-size: 45px;
+    margin: 0 0 50px;
 }
 #portfolio .p-top .p-p-list{
     margin: 0 auto;
@@ -467,6 +471,7 @@ nav .menu-logo{
     text-align: center;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
+    margin: 0 0 50px;
 }
 #pricing .p-tables{
     display: grid;
@@ -754,3 +759,25 @@ footer p span{
     color: orange;
     font-weight: bold;
 }
+
+/* Back to top button */
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: .5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
