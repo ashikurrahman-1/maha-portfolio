@@ -219,8 +219,8 @@
         padding: 10px;
     }
     .recent-portfolio .portfolios .overlay-content{
-        top: 10%;
-        left: 12%;
+        top: 20%;
+        left: 20%;
     }
     .recent-portfolio .portfolios .overlay-content h4{
         font-size: 15px;
@@ -232,7 +232,7 @@
     /* pricing section */
     #pricing .p-tables{
         grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
-        grid-gap: 10px;
+        grid-gap: 25px;
     }
     .p-tables .table a{
         font-size: 20px;
