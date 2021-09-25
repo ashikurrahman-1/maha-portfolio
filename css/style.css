@@ -3,6 +3,7 @@
 }
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
   }
 body{
     margin: 0;
@@ -14,7 +15,7 @@ body{
     overflow-x: hidden !important;
 }
 /* Header nav start */
-#navbar{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -78,8 +79,7 @@ nav .menu-logo{
 .container{
     max-width: 85%;
     margin: 0 auto;
-    /* overflow-x: hidden !important;
-    overflow-y: hidden !important; */
+    
 }
 /* header nav end */
 
@@ -194,6 +194,10 @@ nav .menu-logo{
     padding: 10px 30px;
     background: lightseagreen;
     border-radius: 50px;
+    transition: .6s;
+}
+.about-top-right a:hover{
+    background: orange;
 }
 .about-top-right a i{
     margin-left: 15px;
@@ -284,6 +288,10 @@ nav .menu-logo{
     background: lightseagreen;
     margin: 20px 0;
     display: inline-block;
+    transition: .6s;
+}
+.slider a:hover{
+    background: orange;
 }
 /* OWL Carousel */
 .owl-carousel{
@@ -705,6 +713,10 @@ nav .menu-logo{
     outline: 0;
     border: 0;
     margin-bottom: 0;
+    transition: .6s;
+}
+.contact-bottom .contact-bottom-left .btn:hover{
+    background: orange;
 }
 
 /* contact bottom right */

@@ -160,18 +160,242 @@
 }
 
 @media all and (min-width: 600px){
+    /* navbar */
+    nav .logo{
+        width: 35%;
+    }
+    nav ul{
+        float: none;
+        position: fixed;
+        top: 90px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(32, 178, 171, 0.932);
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 65px;
+        transition: all .8s ease-in-out;
+    }
+    nav ul li{
+        text-align: center;
+        transition: all .5s ease-in-out;
+    }
+    nav ul li:hover{
+        background: lightsalmon;
+    }
+    nav ul li a:hover{
+        color: lightseagreen;
+    }
+    
+    nav .menu-logo{
+        display: block;
+    }
+    nav #toggler:checked ~ ul{
+        right: 0;
+    }
 
+    /* Home section */
+    .header-bottom-right{
+        margin-top: 100px;
+        justify-content: center;
+    }
+
+    /* about section */
+    .about-top{
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+    .about-middle .about-middle-content{
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+    .owl-carousel .owl-item .slider{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    /* Portfolio section */
+    #portfolio .p-top ul li a{
+        padding: 10px;
+    }
+    .recent-portfolio .portfolios .overlay-content{
+        top: 10%;
+        left: 12%;
+    }
+    .recent-portfolio .portfolios .overlay-content h4{
+        font-size: 15px;
+    }
+    .recent-portfolio .portfolios .overlay-content p{
+        margin: 0;
+    }
+
+    /* pricing section */
+    #pricing .p-tables{
+        grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+        grid-gap: 10px;
+    }
+    .p-tables .table a{
+        font-size: 20px;
+    }
+
+    /* Blog section */
+    .blogs{
+        grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
+        grid-gap: 15px;
+    }
+
+    /* Contact section */
+    .contact-top{
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
+    .contact-bottom{
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    }
 }
 
-@media all and (min-width: 768px) {
 
+@media all and (min-width: 768px) {
+    .header-bottom-right{
+        justify-content: flex-end;
+    }
+    /* about section */
+    .about-middle .about-middle-content{
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        grid-auto-flow: dense;
+    }
+    .about-middle .about-middle-content .abc-three{
+        grid-column: 1 / -1;
+    }
+
+    /* blog section */
+    #blog{
+        padding: 0 0 100px;
+    }
+    .blogs{
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        grid-gap: 25px;
+    }
+    .blogs .blog-three{
+        grid-column: 1 / -1;
+    }
+    /* Contact section */
+    .contact-top{
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        grid-auto-flow: dense;
+    }
+    .contact-top .email{
+        grid-column: 1 / -1;
+    }
 }
 
 @media all and (min-width: 992px) {
+    /* Header nav start */
+    nav{
+        overflow: hidden;
+        position: relative;
+    }
+    nav .logo{
+        width: 20%;
+        float: left;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        position: absolute;
+        float: right;
+        top: 0;
+        right: 0;
+        width: 70%;
+        padding: 0;
+        margin: 0 8% 0 0;
+        list-style: none;
+        justify-content: flex-end;
+        flex-direction: row;
+        height: auto;
+        background: none;
+        column-gap: 30px;
+        line-height: 90px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        transition: .5s;
+    }
+    nav ul li a:hover{
+        color: orange;
+    }
+    nav #toggler{
+        display: none;
+    }
+    nav .menu-logo{
+        position: absolute;
+        top: 0;
+        right: 8%;
+        display: none;
+    }
+
+    /* About section */
+    .about-top{
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    }
+    .about-middle .about-middle-content{
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    }
+    .about-middle .about-middle-content .abc-three{
+        grid-column: auto;
+    }
+    .owl-carousel .owl-item .slider{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Portfolio section */
+    #portfolio .p-top ul li a{
+        padding: 20px;
+    }
+    .recent-portfolio .portfolios .overlay-content{
+        top: 30%;
+        left: 30%;
+    }
+
+    /* Pricing section */
+    #pricing .p-tables{
+        grid-gap: 50px;
+    }
+
+    /* Blog section */
+    .blogs{
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    }
+    .blogs .blog-three{
+        grid-column: auto;
+    }
 
 }
 
 @media all and (min-width: 1200px) {
+    .header-bottom{
+        padding: 200px 0;
+    }
+    .header-bottom-right{
+        margin-top: 30px;
+    }
 
+    /* About section */
+    #about{
+        padding-top: 50px;
+    }
+
+    /* Contact section */
+    .contact-top{
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        grid-gap: 30px;
+    }
+    .contact-top .email{
+        grid-column: auto;
+    }
+    .contact-bottom{
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    }
 }
-
