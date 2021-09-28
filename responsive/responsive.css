@@ -316,6 +316,10 @@
         column-gap: 30px;
         line-height: 90px;
     }
+    
+    nav ul li:hover{
+        background: none;
+    }
     nav ul li a{
         text-decoration: none;
         font-size: 18px;
@@ -325,6 +329,7 @@
     }
     nav ul li a:hover{
         color: orange;
+        border-bottom: 3px solid orange;
     }
     nav #toggler{
         display: none;

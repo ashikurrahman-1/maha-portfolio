@@ -250,6 +250,53 @@ nav .menu-logo{
     color: lightgray;
 }
 
+.middle-content-bottom{
+    padding-top: 100px;
+}
+.middle-content-bottom h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.middle-content-bottom h2 span{
+    color: orange;
+}
+.middle-content-bottom h3{
+    font-size: 25px;
+    color: orange;
+}
+.middle-content-bottom p{
+    background:  #055454;
+    color: lightgray;
+    padding: 30px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    color: #c5a0a0;
+    font-weight: 500;
+    transition: .6s;
+    font-size: 17px;
+}
+.middle-content-bottom p span{
+    color: rgb(29, 247, 255);
+}
+.middle-content-bottom p:hover{
+    box-shadow: 0 0 15px 15px rgb(4 224 158);
+}
+.middle-content-bottom .mcb-top{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.middle-content-bottom .mcb-bottom{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+    grid-gap: 50px;
+    align-items: center;
+}
+
+
 /* about bottom */
 .about-bottom{
     padding: 100px 0;
